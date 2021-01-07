@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Coins : MonoBehaviour
 {
-    [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private GameManager gameManager;
 
     private void Start()
     {
-        scoreManager = FindObjectOfType<ScoreManager>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Character"))
         {
-            scoreManager.AddScore();
+            gameManager.AddScore();
             Destroy(gameObject);
         }
     }
