@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //When initialised, turn a random direction and go a random direction
         gameManager = FindObjectOfType<GameManager>();
         rb.rotation = Random.Range(0f, 360f);
         rb.velocity = RandomVector() * Random.Range(minSpeed,maxSpeed);
@@ -28,6 +29,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //If collided with a player, damage them and self destruct
         if (collision.CompareTag("Character"))
         {
             gameManager.DamagePlayer();

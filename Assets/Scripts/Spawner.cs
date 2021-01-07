@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
+        //Add all children transforms as potential spawn locations
         foreach(Transform child in transform)
         {
             spawnLocations.Add(child);
@@ -21,6 +22,7 @@ public class Spawner : MonoBehaviour
 
     void SpawnEnemy()
     {
+        //Spawns a random enemy type at a random spawn location
         Instantiate(enemyTypes[Random.Range(0, enemyTypes.Length)], spawnLocations[Random.Range(0, spawnLocations.Count)].position, Quaternion.identity);
     }
 }
