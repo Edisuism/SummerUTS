@@ -29,9 +29,15 @@ public class GameManager : MonoBehaviour
 
     public void DamagePlayer()
     {
+        //reduce the player's health by 1 
         player.health--;
-        audioSource.Play();
+        //if we have an audio source then play it
+        if (audioSource)
+        {
+            audioSource.Play();
+        }
         Debug.Log("damage");
+        //call the deduct health method from health display and pass it's return to isGameOver
         isGameOver = healthDisplay.DeductHealth();
 
         if (isGameOver)

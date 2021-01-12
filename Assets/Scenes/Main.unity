@@ -1418,9 +1418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b18a56b4d34b2442b36f3e0c393355a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHeart: {fileID: 934074813}
-  middleHeart: {fileID: 870467831}
-  rightHeart: {fileID: 97550240}
+  leftHeart: {fileID: 0}
+  middleHeart: {fileID: 0}
+  rightHeart: {fileID: 0}
 --- !u!1 &975062342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,8 +1579,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   baseSpeed: 5
-  animator: {fileID: 0}
-  spriteRenderer: {fileID: 0}
 --- !u!50 &1019010200
 Rigidbody2D:
   serializedVersion: 4
@@ -1617,7 +1615,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.25
 --- !u!1 &1037749298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,7 +2516,7 @@ MonoBehaviour:
   healthDisplay: {fileID: 966257295}
   player: {fileID: 1019010199}
   gameOverText: {fileID: 695151014}
-  audioSource: {fileID: 1942823449}
+  audioSource: {fileID: 0}
   scoreText: {fileID: 1426187984}
 --- !u!4 &1942823448
 Transform:

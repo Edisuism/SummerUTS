@@ -11,20 +11,11 @@ public class Health : MonoBehaviour
 
     public bool DeductHealth()
     {
-        if (rightHeart.activeInHierarchy)
-        {
-            rightHeart.SetActive(false);
-            return false;
-        }
-        else if (middleHeart.activeInHierarchy)
-        {
-            middleHeart.SetActive(false);
-            return false;
-        }
+        //Insert your code below this line
 
-        leftHeart.SetActive(false);
+
+
         return true;
-
     }
 
 }
