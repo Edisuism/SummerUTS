@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
+    //In general put your VARIABLES (e.g. int, string, bool) under this line and before start
+
     // Start is called before the first frame update
     void Start()
     {

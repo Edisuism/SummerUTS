@@ -11,10 +11,17 @@ public class Health : MonoBehaviour
 
     public bool DeductHealth()
     {
-        //Insert your code below this line
+        //NOTE IMPORTANT METHODS: SetActive(false) and activeInHierarchy()
+        //First check if right heart is active, if it is then remove it
 
 
+        //Second, check if the middle heart is active, if it is then remove it
 
+
+        //Third, check if the left heart is active, if it is then remove it
+
+
+        //Do not edit below this line
         return true;
     }
 
